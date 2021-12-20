@@ -3,9 +3,39 @@
   "version": "1.0.0",
   "description": "A boilerplate template project for a TypeScript Language Service plugin",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p .",
+    "build:watch": "tsc --watch -p .",
+    "lint": "eslint . --ext .ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngnijland/typescript-language-service-plugin-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ngnijland/typescript-language-service-plugin-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ngnijland/typescript-language-service-plugin-boilerplate#readme",
+  "keywords": [
+    "typescript",
+    "plugin",
+    "boilerplate",
+    "language service"
+  ],
   "author": "Niek Nijland <ngnijland@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  }
 }
