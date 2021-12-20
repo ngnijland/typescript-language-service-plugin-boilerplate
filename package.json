@@ -1,0 +1,11 @@
+{
+  "name": "typescript-language-service-plugin-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate template project for a TypeScript Language Service plugin",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Niek Nijland <ngnijland@gmail.com>",
+  "license": "MIT"
+}
